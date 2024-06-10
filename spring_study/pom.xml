@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>spring_01_quickstart</module>
+        <module>spring_02_base_config</module>
     </modules>
 
 
