@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 方式一：通过构造方法实例化bean -->
+    <bean id="bookDao" class="top.ytazwc.spring.dao.impl.BookDaoImpl"/>
+
+    <!-- 方式二：使用静态工厂实例化bean -->
+    <bean id="orderDao" class="top.ytazwc.spring.factory.OrderDaoFactory" factory-method="getOrderDao"/>
+
+    <!-- 方式三：使用实例工厂实例化bean -->
+    <!-- 先配置工厂实例bean -->
+<!--    <bean id="userFactory" class="top.ytazwc.spring.factory.UserDaoFactory"/>-->
+<!--    &lt;!&ndash; 再配置工厂对应的bean，以及生产对象的方法 &ndash;&gt;-->
+<!--    <bean id="userDao" factory-bean="userFactory" factory-method="getUserDao"/>-->
+
+    <!-- 方式四：使用FactoryBean实例化bean -->
+    <bean id="userDao" class="top.ytazwc.spring.factory.UserDaoFactoryBean"/>
+
+</beans>
