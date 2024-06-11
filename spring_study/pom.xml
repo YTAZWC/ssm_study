@@ -16,6 +16,7 @@
         <module>spring_05_di_setter</module>
         <module>spring_06_di_constructor</module>
         <module>spring_07_di_autowire</module>
+        <module>spring_08_di_collection</module>
     </modules>
 
 
