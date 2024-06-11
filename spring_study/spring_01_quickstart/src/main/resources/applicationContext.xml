@@ -7,7 +7,7 @@
 
     <!-- 2. 配置bean -->
     <!-- bean标签配置bean，id给bean起名，class属性表示bean的类型 -->
-    <bean id="bookDao" class="top.ytazwc.spring.dao.impl.BookDaoImpl"/>
+    <bean id="bookDao" class="top.ytazwc.spring.top.ytazwc.spring.impl.dao.BookDaoImpl"/>
     <bean id="bookService" class="top.ytazwc.spring.service.impl.BookServiceImpl">
         <!--7. 配置server与dao的关系-->
         <!-- property标签表示配置当前bean的属性 -->
