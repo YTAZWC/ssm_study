@@ -1,23 +1,25 @@
 package top.ytazwc.spring;
 
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import top.ytazwc.spring.config.SpringConfig;
 import top.ytazwc.spring.dao.BookDao;
 import top.ytazwc.spring.service.BookService;
 
 /**
  * @author 花木凋零成兰
- * @title App
- * @date 2024/6/11 20:20
+ * @title AppForAnnotation
+ * @date 2024/6/11 20:43
  * @package top.ytazwc.spring
- * @description TODO
+ * @description 通过纯注解获取bean
  */
-public class App {
+public class AppForAnnotation {
     public static void main(String[] args) {
-        ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.bak");
+        //1. 加载配置类
+        ApplicationContext ctx = new AnnotationConfigApplicationContext(SpringConfig.class);
         BookDao bookDao = (BookDao) ctx.getBean("bookDao");
-        bookDao.save();
-        // 按类型
+        System.out.println(bookDao);
+
         BookService bookService = ctx.getBean(BookService.class);
         System.out.println(bookService);
     }
