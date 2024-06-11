@@ -18,6 +18,7 @@
         <module>spring_07_di_autowire</module>
         <module>spring_08_di_collection</module>
         <module>spring_09_datasource</module>
+        <module>spring_10_container</module>
     </modules>
 
 
