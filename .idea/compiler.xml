@@ -11,6 +11,7 @@
         <module name="spring_01_quickstart" />
         <module name="spring_08_di_collection" />
         <module name="spring_10_container" />
+        <module name="spring_14_annotation_third_bean_manager" />
         <module name="spring_07_di_autowire" />
         <module name="spring_12_annotation_bean_manager" />
         <module name="spring_06_di_constructor" />
