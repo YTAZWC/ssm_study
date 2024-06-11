@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- Setter注入简单类型 -->
-    <bean id="bookDao" class="top.ytazwc.spring.top.ytazwc.spring.impl.dao.BookDaoImpl">
+    <bean id="bookDao" class="top.ytazwc.spring.dao.impl.BookDaoImpl">
         <property name="databaseName" value="mysql"/>
         <property name="connectionNum" value="100"/>
     </bean>

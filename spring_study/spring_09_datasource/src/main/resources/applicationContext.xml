@@ -37,7 +37,7 @@
         <property name="password" value="${jdbc.password}"/>
     </bean>
 
-    <bean id="bookDao" class="top.ytazwc.spring.top.ytazwc.spring.impl.dao.BookDaoImpl">
+    <bean id="bookDao" class="top.ytazwc.spring.dao.impl.BookDaoImpl">
         <property name="name" value="${jdbc.driver}"/>
     </bean>
 

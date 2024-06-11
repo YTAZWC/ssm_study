@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- 方式一：通过构造方法实例化bean -->
-    <bean id="bookDao" class="top.ytazwc.spring.top.ytazwc.spring.impl.dao.BookDaoImpl"/>
+    <bean id="bookDao" class="top.ytazwc.spring.dao.impl.BookDaoImpl"/>
 
     <!-- 方式二：使用静态工厂实例化bean -->
     <bean id="orderDao" class="top.ytazwc.spring.factory.OrderDaoFactory" factory-method="getOrderDao"/>

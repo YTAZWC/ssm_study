@@ -34,7 +34,7 @@
 <!--    </bean>-->
 
     <!-- 使用位置解决参数匹配，解决参数类型重复问题 -->
-    <bean id="bookDao" class="top.ytazwc.spring.top.ytazwc.spring.impl.dao.BookDaoImpl">
+    <bean id="bookDao" class="top.ytazwc.spring.dao.impl.BookDaoImpl">
         <constructor-arg index="0" value="mysql"/>
         <constructor-arg index="1" value="666"/>
     </bean>
