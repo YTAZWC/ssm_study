@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Setter注入简单类型 -->
+    <bean id="bookDao" class="top.ytazwc.spring.dao.impl.BookDaoImpl">
+        <property name="databaseName" value="mysql"/>
+        <property name="connectionNum" value="100"/>
+    </bean>
+
+    <bean id="userDao" class="top.ytazwc.spring.dao.impl.UserDaoImpl"/>
+
+    <!-- Setter注入引用类型 -->
+    <bean id="bookService" class="top.ytazwc.spring.service.impl.BookServiceImpl">
+        <property name="bookDao" ref="bookDao"/>
+        <property name="userDao" ref="userDao"/>
+    </bean>
+
+</beans>
