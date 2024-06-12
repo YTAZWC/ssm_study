@@ -21,6 +21,7 @@
         <module name="spring_18_aop_quickstart" />
         <module name="spring_06_di_constructor" />
         <module name="spring_02_base_config" />
+        <module name="spring_19_aop_pointcut" />
         <module name="spring_17_aop_demo" />
         <module name="spring_05_di_setter" />
         <module name="spring_03_bean_instance" />

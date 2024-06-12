@@ -27,6 +27,7 @@
         <module>spring_16_spring_junit</module>
         <module>spring_17_aop_demo</module>
         <module>spring_18_aop_quickstart</module>
+        <module>spring_19_aop_pointcut</module>
     </modules>
 
 
