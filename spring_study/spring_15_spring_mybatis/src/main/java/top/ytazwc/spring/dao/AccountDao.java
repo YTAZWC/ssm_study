@@ -4,6 +4,7 @@ import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
+import org.springframework.stereotype.Repository;
 import top.ytazwc.spring.domain.Account;
 
 import java.util.List;
@@ -15,6 +16,7 @@ import java.util.List;
  * @package top.ytazwc.spring.dao
  * @description TODO
  */
+@Repository
 public interface AccountDao {
 
     @Insert("insert into tbl_account(name, money) values (#{name}, #{money})")
