@@ -28,6 +28,7 @@
         <module>spring_17_aop_demo</module>
         <module>spring_18_aop_quickstart</module>
         <module>spring_19_aop_pointcut</module>
+        <module>spring_20_app_advice_type</module>
     </modules>
 
 

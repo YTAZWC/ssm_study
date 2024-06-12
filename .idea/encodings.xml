@@ -37,6 +37,8 @@
     <file url="file://$PROJECT_DIR$/spring_study/spring_18_aop_quickstart/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring_study/spring_19_aop_pointcut/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring_study/spring_19_aop_pointcut/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring_study/spring_20_app_advice_type/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring_study/spring_20_app_advice_type/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
