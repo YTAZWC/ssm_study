@@ -26,6 +26,7 @@
         <module>spring_15_spring_mybatis</module>
         <module>spring_16_spring_junit</module>
         <module>spring_17_aop_demo</module>
+        <module>spring_18_aop_quickstart</module>
     </modules>
 
 
