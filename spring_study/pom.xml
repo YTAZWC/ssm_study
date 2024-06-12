@@ -25,6 +25,7 @@
         <module>spring_14_annotation_third_bean_manager</module>
         <module>spring_15_spring_mybatis</module>
         <module>spring_16_spring_junit</module>
+        <module>spring_17_aop_demo</module>
     </modules>
 
 
