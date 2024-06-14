@@ -33,6 +33,7 @@
         <module>spring_22_aop_advice_data</module>
         <module>spring_23_case_handle_password</module>
         <module>spring_24_case_transfer</module>
+        <module>spring_25_case_transfer_log</module>
     </modules>
 
 
