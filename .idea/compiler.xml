@@ -28,6 +28,7 @@
         <module name="spring_01_quickstart" />
         <module name="spring_08_di_collection" />
         <module name="spring_12_annotation_bean_manager" />
+        <module name="springmvc_03_request_mapping" />
         <module name="spring_18_aop_quickstart" />
         <module name="spring_06_di_constructor" />
         <module name="spring_02_base_config" />
@@ -35,6 +36,7 @@
         <module name="spring_21_case_interface_run_speed" />
         <module name="spring_03_bean_instance" />
         <module name="spring_04_bean_lifecycle" />
+        <module name="springmvc_04_request_param" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
