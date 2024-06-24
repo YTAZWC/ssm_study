@@ -11,6 +11,7 @@
     <modules>
         <module>springmvc_01_quickstart</module>
         <module>springmvc_02_bean_load</module>
+        <module>springmvc_03_request_mapping</module>
     </modules>
 
     <properties>
