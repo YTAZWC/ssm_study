@@ -13,6 +13,7 @@
         <module>springmvc_02_bean_load</module>
         <module>springmvc_03_request_mapping</module>
         <module>springmvc_04_request_param</module>
+        <module>springmvc_05_response</module>
     </modules>
 
     <properties>
