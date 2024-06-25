@@ -1,9 +1,7 @@
 package top.ytazwc.springmvc.controller;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import top.ytazwc.springmvc.domain.User;
 
 /**
@@ -16,35 +14,35 @@ import top.ytazwc.springmvc.domain.User;
 @Controller
 public class UserController {
 
-    @RequestMapping("/save")
+    @RequestMapping(value = "/users", method = RequestMethod.POST)
     @ResponseBody
     public String save(@RequestBody User user) {
-        System.out.println("user save..."+user);
+        System.out.println("user save..." + user);
         return "{'module':'user save'}";
     }
 
-    @RequestMapping("/delete")
+    @RequestMapping(value = "/users/{id}", method = RequestMethod.DELETE)
     @ResponseBody
-    public String delete(Integer id) {
+    public String delete(@PathVariable("id") Integer id) {
         System.out.println("user delete..." + id);
         return "{'module':'user delete'}";
     }
 
-    @RequestMapping("/update")
+    @RequestMapping(value = "/users", method = RequestMethod.PUT)
     @ResponseBody
     public String update(@RequestBody User user) {
         System.out.println("user update..." + user);
         return "{'module':'user update'}";
     }
 
-    @RequestMapping("/getById")
+    @RequestMapping(value = "/users/{id}", method = RequestMethod.GET)
     @ResponseBody
-    public String getById(Integer id) {
+    public String getById(@PathVariable("id") Integer id) {
         System.out.println("user getById..." + id);
         return "{'module':'user getById'}";
     }
 
-    @RequestMapping("/findAll")
+    @RequestMapping(value = "/users", method = RequestMethod.GET)
     @ResponseBody
     public String getAll() {
         System.out.println("user getAll...");
