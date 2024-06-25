@@ -2,6 +2,7 @@ package top.ytazwc.springmvc.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 /**
  * @author 花木凋零成兰
@@ -12,5 +13,6 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 @ComponentScan({"top.ytazwc.springmvc.controller"})
+@EnableWebMvc   // 开启JSON数据格式转换
 public class SpringMvcConfig {
 }

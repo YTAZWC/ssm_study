@@ -1,6 +1,7 @@
 package top.ytazwc.springmvc.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -67,6 +68,30 @@ public class UserController {
     public String listParam(@RequestParam List<String> likes) {
         System.out.println("集合参数传递 likes ==> " + likes);
         return "'module':'list param'";
+    }
+
+    // 集合参数：JSON格式
+    @RequestMapping("/listParamForJson")
+    @ResponseBody
+    public String listParamForJson(@RequestBody List<String> likes) {
+        System.out.println("list common(json)参数传递 list ==> " + likes);
+        return "{'module':'list common for json param'}";
+    }
+
+    // POJO参数：JSON格式
+    @RequestMapping("/pojoParamForJson")
+    @ResponseBody
+    public String pojoParamForJson(@RequestBody User user) {
+        System.out.println("pojo(json)参数传递 user ==> " + user);
+        return "{'module':'pojo for json param'}";
+    }
+
+    // 集合参数：JSON格式
+    @RequestMapping("/listPojoParamFroJson")
+    @ResponseBody
+    public String listPojoParamFroJson(@RequestBody List<User> list) {
+        System.out.println("list pojo(json)参数传递 list ==> " + list);
+        return "'module':'list pojo for json param'";
     }
 
 }

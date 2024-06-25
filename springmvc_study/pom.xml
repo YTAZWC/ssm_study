@@ -22,6 +22,7 @@
         <servlet.version>4.0.1</servlet.version>
         <spring.mvc.version>5.3.33</spring.mvc.version>
         <lombok.version>1.18.32</lombok.version>
+        <jackson-databind.version>2.15.4</jackson-databind.version>
     </properties>
 
 </project>
