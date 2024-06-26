@@ -28,6 +28,7 @@
         <module name="spring_11_annotation_bean" />
         <module name="spring_01_quickstart" />
         <module name="spring_08_di_collection" />
+        <module name="springmvc_09_result" />
         <module name="spring_12_annotation_bean_manager" />
         <module name="springmvc_03_request_mapping" />
         <module name="springmvc_05_response" />
