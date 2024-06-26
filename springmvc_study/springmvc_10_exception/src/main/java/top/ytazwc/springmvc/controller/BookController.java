@@ -3,6 +3,8 @@ package top.ytazwc.springmvc.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import top.ytazwc.springmvc.domain.Book;
+import top.ytazwc.springmvc.result.Code;
+import top.ytazwc.springmvc.result.Result;
 import top.ytazwc.springmvc.service.BookService;
 
 import java.util.List;
@@ -50,6 +52,9 @@ public class BookController {
 
     @GetMapping("/{id}")
     public Result<Book> getById(@PathVariable("id") Integer id) {
+
+        int i = 1/0;
+
         Book book = bookService.getById(id);
         if (book != null) {
             return Result.success(Code.GET_OK.getCode(), book);

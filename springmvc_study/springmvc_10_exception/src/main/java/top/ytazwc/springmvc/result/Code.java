@@ -1,4 +1,4 @@
-package top.ytazwc.springmvc.controller;
+package top.ytazwc.springmvc.result;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
