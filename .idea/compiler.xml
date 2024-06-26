@@ -33,7 +33,9 @@
         <module name="springmvc_05_response" />
         <module name="spring_18_aop_quickstart" />
         <module name="spring_06_di_constructor" />
+        <module name="springmvc_07_rest_case" />
         <module name="spring_02_base_config" />
+        <module name="springmvc_08_ssm" />
         <module name="spring_19_aop_pointcut" />
         <module name="spring_21_case_interface_run_speed" />
         <module name="spring_03_bean_instance" />
