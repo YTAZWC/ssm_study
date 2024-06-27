@@ -49,6 +49,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="maven_study" target="1.8" />
       <module name="spring_03_bean_insatnce" target="1.8" />
     </bytecodeTargetLevel>
   </component>
