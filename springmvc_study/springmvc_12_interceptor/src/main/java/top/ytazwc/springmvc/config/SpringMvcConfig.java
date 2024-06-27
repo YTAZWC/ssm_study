@@ -8,6 +8,7 @@ import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import top.ytazwc.springmvc.controller.interceptor.ProjectInterceptor;
+import top.ytazwc.springmvc.controller.interceptor.TwoInterceptor;
 
 /**
  * @author yt
@@ -21,6 +22,9 @@ public class SpringMvcConfig implements WebMvcConfigurer {
     @Autowired
     private ProjectInterceptor projectInterceptor;
 
+    @Autowired
+    private TwoInterceptor twoInterceptor;
+
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         WebMvcConfigurer.super.addResourceHandlers(registry);
@@ -29,5 +33,6 @@ public class SpringMvcConfig implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(projectInterceptor).addPathPatterns("/books/**");
+        registry.addInterceptor(twoInterceptor).addPathPatterns("/books/**");
     }
 }
