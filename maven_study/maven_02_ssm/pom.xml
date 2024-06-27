@@ -21,6 +21,13 @@
             <groupId>top.ytazwc.maven</groupId>
             <artifactId>maven_04_dao</artifactId>
             <version>1.0-SNAPSHOT</version>
+            <!-- 排除依赖：隐藏当前资源对应的依赖关系 -->
+            <exclusions>
+                <exclusion>
+                    <groupId>log4j</groupId>
+                    <artifactId>log4j</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <!-- web mvc -->
