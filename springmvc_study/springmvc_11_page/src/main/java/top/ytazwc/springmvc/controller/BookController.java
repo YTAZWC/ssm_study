@@ -24,9 +24,9 @@ public class BookController {
     public Result<Boolean> save(@RequestBody Book book) {
         boolean result = bookService.save(book);
         if (result) {
-            return Result.success(ResponseCode.SAVE_OK.getCode(), true);
+            return Result.success(ResponseCode.SAVE_OK.getCode(), "新增成功!");
         } else {
-            return Result.fail(ResponseCode.SAVE_ERR.getCode(), false, "新增失败!");
+            return Result.fail(ResponseCode.SAVE_ERR.getCode(), "新增失败!");
         }
     }
 
@@ -34,9 +34,9 @@ public class BookController {
     public Result<Boolean> update(@RequestBody Book book) {
         boolean result = bookService.update(book);
         if (result) {
-            return Result.success(ResponseCode.UPDATE_OK.getCode(), true);
+            return Result.success(ResponseCode.UPDATE_OK.getCode(), "更新成功!");
         } else {
-            return Result.fail(ResponseCode.UPDATE_ERR.getCode(), false, "更新失败!");
+            return Result.fail(ResponseCode.UPDATE_ERR.getCode(),"更新失败!");
         }
     }
 
@@ -44,9 +44,9 @@ public class BookController {
     public Result<Boolean> delete(@PathVariable("id") Integer id) {
         boolean result = bookService.delete(id);
         if (result) {
-            return Result.success(ResponseCode.DELETE_OK.getCode(), true, id+"");
+            return Result.success(ResponseCode.DELETE_OK.getCode(), "删除成功! 图书id: " + id);
         } else {
-            return Result.fail(ResponseCode.DELETE_ERR.getCode(), false, "删除失败!图书id:" + id);
+            return Result.fail(ResponseCode.DELETE_ERR.getCode(), "删除失败! 图书id: " + id);
         }
     }
 

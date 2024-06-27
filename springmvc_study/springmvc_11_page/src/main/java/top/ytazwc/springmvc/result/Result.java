@@ -41,6 +41,10 @@ public class Result<T> {
         return new Result<>(data, code);
     }
 
+    public static <T> Result<T> success(Integer code, String msg) {
+        return new Result<>(code, msg);
+    }
+
     public static <T> Result<T> fail(Integer code, T data, String msg) {
         return new Result<>(data, code, msg);
     }
