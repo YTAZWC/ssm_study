@@ -1,4 +1,4 @@
-package top.ytazwc.springmvc.result;
+package top.ytazwc.springmvc.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 
 /**
  * @author 花木凋零成兰
- * @title Code
+ * @title ResponseCode
  * @date 2024/6/26 22:27
  * @package top.ytazwc.springmvc.controller
  * @description 执行结果状态码
@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-public enum Code {
+public enum ResponseCode {
 
     SAVE_OK(20011),
     DELETE_OK(20021),

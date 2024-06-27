@@ -3,7 +3,7 @@ package top.ytazwc.springmvc.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import top.ytazwc.springmvc.domain.Book;
-import top.ytazwc.springmvc.result.Code;
+import top.ytazwc.springmvc.enums.ResponseCode;
 import top.ytazwc.springmvc.result.Result;
 import top.ytazwc.springmvc.service.BookService;
 
@@ -24,9 +24,9 @@ public class BookController {
     public Result<Boolean> save(@RequestBody Book book) {
         boolean result = bookService.save(book);
         if (result) {
-            return Result.success(Code.SAVE_OK.getCode(), true);
+            return Result.success(ResponseCode.SAVE_OK.getCode(), true);
         } else {
-            return Result.fail(Code.SAVE_ERR.getCode(), false, "新增失败!");
+            return Result.fail(ResponseCode.SAVE_ERR.getCode(), false, "新增失败!");
         }
     }
 
@@ -34,9 +34,9 @@ public class BookController {
     public Result<Boolean> update(@RequestBody Book book) {
         boolean result = bookService.update(book);
         if (result) {
-            return Result.success(Code.UPDATE_OK.getCode(), true);
+            return Result.success(ResponseCode.UPDATE_OK.getCode(), true);
         } else {
-            return Result.fail(Code.UPDATE_ERR.getCode(), false, "更新失败!");
+            return Result.fail(ResponseCode.UPDATE_ERR.getCode(), false, "更新失败!");
         }
     }
 
@@ -44,22 +44,19 @@ public class BookController {
     public Result<Boolean> delete(@PathVariable("id") Integer id) {
         boolean result = bookService.delete(id);
         if (result) {
-            return Result.success(Code.DELETE_OK.getCode(), true, id+"");
+            return Result.success(ResponseCode.DELETE_OK.getCode(), true, id+"");
         } else {
-            return Result.fail(Code.DELETE_ERR.getCode(), false, "删除失败!图书id:" + id);
+            return Result.fail(ResponseCode.DELETE_ERR.getCode(), false, "删除失败!图书id:" + id);
         }
     }
 
     @GetMapping("/{id}")
     public Result<Book> getById(@PathVariable("id") Integer id) {
-
-        int i = 1/0;
-
         Book book = bookService.getById(id);
         if (book != null) {
-            return Result.success(Code.GET_OK.getCode(), book);
+            return Result.success(ResponseCode.GET_OK.getCode(), book);
         } else {
-            return Result.fail(Code.GET_ERR.getCode(), "获取图书失败!图书id:" + id);
+            return Result.fail(ResponseCode.GET_ERR.getCode(), "获取图书失败!图书id:" + id);
         }
     }
 
@@ -67,9 +64,9 @@ public class BookController {
     public Result<List<Book>> getAll() {
         List<Book> books = bookService.getAll();
         if (books != null) {
-            return Result.success(Code.GET_OK.getCode(), books);
+            return Result.success(ResponseCode.GET_OK.getCode(), books);
         } else {
-            return Result.fail(Code.GET_ERR.getCode(), "获取所有图书失败!");
+            return Result.fail(ResponseCode.GET_ERR.getCode(), "获取所有图书失败!");
         }
     }
 
