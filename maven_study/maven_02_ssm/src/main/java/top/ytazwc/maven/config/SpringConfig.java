@@ -11,7 +11,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  * 2024/6/26
  */
 @Configuration
-@ComponentScan({"top.ytazwc.springmvc.service"})
+@ComponentScan({"top.ytazwc.maven.service"})
 @PropertySource({"classpath:jdbc.properties"})
 @Import({JDBCConfig.class, MybatisConfig.class})
 @EnableTransactionManagement    // 开启注解

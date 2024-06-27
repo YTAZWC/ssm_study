@@ -9,7 +9,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
  * 2024/6/26
  */
 @Configuration
-@ComponentScan({"top.ytazwc.springmvc.controller", "top.ytazwc.springmvc.advice", "top.ytazwc.springmvc.config"})
+@ComponentScan({"top.ytazwc.maven.controller", "top.ytazwc.maven.advice", "top.ytazwc.maven.config"})
 @EnableWebMvc
 public class SpringMvcConfig {
 }

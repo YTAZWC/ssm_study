@@ -16,14 +16,14 @@ public class MybatisConfig {
     public SqlSessionFactoryBean sessionFactoryBean(DataSource dataSource) {
         SqlSessionFactoryBean sessionFactoryBean = new SqlSessionFactoryBean();
         sessionFactoryBean.setDataSource(dataSource);
-        sessionFactoryBean.setTypeAliasesPackage("top.ytazwc.springmvc.domain");
+        sessionFactoryBean.setTypeAliasesPackage("top.ytazwc.maven.domain");
         return sessionFactoryBean;
     }
 
     @Bean
     public MapperScannerConfigurer mapperScannerConfigurer() {
         MapperScannerConfigurer configurer = new MapperScannerConfigurer();
-        configurer.setBasePackage("top.ytazwc.springmvc.dao");
+        configurer.setBasePackage("top.ytazwc.maven.dao");
         return configurer;
     }
 

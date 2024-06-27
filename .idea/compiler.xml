@@ -9,6 +9,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring_22_aop_advice_data" />
+        <module name="maven_04_dao" />
         <module name="spring_13_annotation_di" />
         <module name="spring_16_spring_junit" />
         <module name="spring_24_case_transfer" />
