@@ -1,10 +1,10 @@
-package top.ytazwc.springmvc.dao;
+package top.ytazwc.maven.dao;
 
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
-import top.ytazwc.springmvc.domain.Book;
+import top.ytazwc.maven.domain.Book;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package top.ytazwc.springmvc.exception;
+package top.ytazwc.maven.exception;
 
 import lombok.Getter;
 import lombok.Setter;

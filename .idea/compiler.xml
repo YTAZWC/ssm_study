@@ -23,6 +23,7 @@
         <module name="springmvc_02_bean_load" />
         <module name="spring_17_aop_demo" />
         <module name="spring_05_di_setter" />
+        <module name="maven_03_pojo" />
         <module name="spring_09_datasource" />
         <module name="spring_20_app_advice_type" />
         <module name="spring_23_case_handle_password" />
@@ -49,7 +50,6 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="maven_study" target="1.8" />
       <module name="spring_03_bean_insatnce" target="1.8" />
     </bytecodeTargetLevel>
   </component>

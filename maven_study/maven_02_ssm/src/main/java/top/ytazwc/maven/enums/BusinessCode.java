@@ -1,4 +1,4 @@
-package top.ytazwc.springmvc.enums;
+package top.ytazwc.maven.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -11,10 +11,13 @@ import lombok.NoArgsConstructor;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-public enum CommonCode {
+public enum BusinessCode {
 
-    SYSTEM_UNKNOWN_ERR(5999);
+    BUSINESS_ERR(60001);
 
+    /**
+     * 系统异常编码
+     */
     private Integer code;
 
 }

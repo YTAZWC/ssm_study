@@ -1,10 +1,10 @@
-package top.ytazwc.springmvc.service.impl;
+package top.ytazwc.maven.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import top.ytazwc.springmvc.dao.BookDao;
-import top.ytazwc.springmvc.domain.Book;
-import top.ytazwc.springmvc.service.BookService;
+import top.ytazwc.maven.dao.BookDao;
+import top.ytazwc.maven.service.BookService;
+import top.ytazwc.maven.domain.Book;
 
 import java.util.List;
 

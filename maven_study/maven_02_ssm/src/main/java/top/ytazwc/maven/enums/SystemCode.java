@@ -1,4 +1,4 @@
-package top.ytazwc.springmvc.enums;
+package top.ytazwc.maven.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -11,9 +11,10 @@ import lombok.NoArgsConstructor;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-public enum BusinessCode {
+public enum SystemCode {
 
-    BUSINESS_ERR(60001);
+    SYSTEM_ERR(50001),
+    SYSTEM_TIMEOUT_ERR(50002);
 
     /**
      * 系统异常编码

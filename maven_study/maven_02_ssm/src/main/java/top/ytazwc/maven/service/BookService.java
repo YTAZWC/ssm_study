@@ -1,7 +1,7 @@
-package top.ytazwc.springmvc.service;
+package top.ytazwc.maven.service;
 
 import org.springframework.transaction.annotation.Transactional;
-import top.ytazwc.springmvc.domain.Book;
+import top.ytazwc.maven.domain.Book;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package top.ytazwc.springmvc.config;
+package top.ytazwc.maven.config;
 
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.mapper.MapperScannerConfigurer;

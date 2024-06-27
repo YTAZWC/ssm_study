@@ -1,4 +1,5 @@
-package top.ytazwc.springmvc.result;
+package top.ytazwc.maven.result;
+
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -34,23 +35,23 @@ public class Result<T> {
     }
 
     public static <T> Result<T> success(Integer code, T data, String msg) {
-        return new Result<>(data, code, msg);
+        return new Result<T>(data, code, msg);
     }
 
     public static <T> Result<T> success(Integer code, T data) {
-        return new Result<>(data, code);
+        return new Result<T>(data, code);
     }
 
     public static <T> Result<T> success(Integer code, String msg) {
-        return new Result<>(code, msg);
+        return new Result<T>(code, msg);
     }
 
     public static <T> Result<T> fail(Integer code, T data, String msg) {
-        return new Result<>(data, code, msg);
+        return new Result<T>(data, code, msg);
     }
 
     public static <T> Result<T> fail(Integer code, String msg) {
-        return new Result<>(code, msg);
+        return new Result<T>(code, msg);
     }
 
 }

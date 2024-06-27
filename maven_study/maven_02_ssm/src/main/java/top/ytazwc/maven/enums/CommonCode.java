@@ -1,4 +1,4 @@
-package top.ytazwc.springmvc.enums;
+package top.ytazwc.maven.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -11,14 +11,10 @@ import lombok.NoArgsConstructor;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-public enum SystemCode {
+public enum CommonCode {
 
-    SYSTEM_ERR(50001),
-    SYSTEM_TIMEOUT_ERR(50002);
+    SYSTEM_UNKNOWN_ERR(5999);
 
-    /**
-     * 系统异常编码
-     */
     private Integer code;
 
 }

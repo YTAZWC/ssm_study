@@ -1,11 +1,11 @@
-package top.ytazwc.springmvc.controller;
+package top.ytazwc.maven.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import top.ytazwc.springmvc.domain.Book;
-import top.ytazwc.springmvc.enums.ResponseCode;
-import top.ytazwc.springmvc.result.Result;
-import top.ytazwc.springmvc.service.BookService;
+import top.ytazwc.maven.enums.ResponseCode;
+import top.ytazwc.maven.service.BookService;
+import top.ytazwc.maven.domain.Book;
+import top.ytazwc.maven.result.Result;
 
 import java.util.List;
 

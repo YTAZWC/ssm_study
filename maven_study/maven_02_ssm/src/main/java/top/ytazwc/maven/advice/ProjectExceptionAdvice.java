@@ -1,11 +1,11 @@
-package top.ytazwc.springmvc.advice;
+package top.ytazwc.maven.advice;
 
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
-import top.ytazwc.springmvc.enums.CommonCode;
-import top.ytazwc.springmvc.exception.BusinessException;
-import top.ytazwc.springmvc.exception.SystemException;
-import top.ytazwc.springmvc.result.Result;
+import top.ytazwc.maven.enums.CommonCode;
+import top.ytazwc.maven.exception.BusinessException;
+import top.ytazwc.maven.exception.SystemException;
+import top.ytazwc.maven.result.Result;
 
 /**
  * @author 花木凋零成兰

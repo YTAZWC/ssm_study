@@ -1,4 +1,4 @@
-package top.ytazwc.springmvc.config;
+package top.ytazwc.maven.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import org.springframework.beans.factory.annotation.Value;

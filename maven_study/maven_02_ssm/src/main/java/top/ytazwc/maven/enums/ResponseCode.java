@@ -1,4 +1,4 @@
-package top.ytazwc.springmvc.enums;
+package top.ytazwc.maven.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -1,4 +1,4 @@
-package top.ytazwc.springmvc.domain;
+package top.ytazwc.maven.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
