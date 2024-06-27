@@ -27,6 +27,7 @@
         <module name="spring_20_app_advice_type" />
         <module name="spring_23_case_handle_password" />
         <module name="spring_25_case_transfer_log" />
+        <module name="maven_02_ssm" />
         <module name="spring_11_annotation_bean" />
         <module name="spring_01_quickstart" />
         <module name="spring_08_di_collection" />

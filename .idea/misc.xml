@@ -10,9 +10,9 @@
         <option value="$PROJECT_DIR$/spring_study/pom.xml" />
         <option value="$PROJECT_DIR$/spring_study/spring_02_base_config/pom.xml" />
         <option value="$PROJECT_DIR$/springmvc_study/pom.xml" />
+        <option value="$PROJECT_DIR$/maven_study/pom.xml" />
       </list>
     </option>
-    <option name="workspaceImportForciblyTurnedOn" value="true" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />

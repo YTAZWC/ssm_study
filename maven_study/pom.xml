@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>top.ytazwc.maven</groupId>
+    <artifactId>maven_study</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>maven_02_ssm</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <servlet.version>4.0.1</servlet.version>
+        <spring.mvc.version>5.3.33</spring.mvc.version>
+        <lombok.version>1.18.32</lombok.version>
+        <jackson-databind.version>2.15.4</jackson-databind.version>
+        <spring.version>5.2.14.RELEASE</spring.version>
+        <druid.version>1.2.20</druid.version>
+        <mybatis.version>3.5.16</mybatis.version>
+        <mybatis-spring.version>3.0.0</mybatis-spring.version>
+        <junit.version>4.13.2</junit.version>
+        <mysql.version>8.0.33</mysql.version>
+    </properties>
+
+</project>
