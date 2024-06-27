@@ -20,6 +20,7 @@
         <module>springmvc_09_result</module>
         <module>springmvc_10_exception</module>
         <module>springmvc_11_page</module>
+        <module>springmvc_12_interceptor</module>
     </modules>
 
     <properties>
