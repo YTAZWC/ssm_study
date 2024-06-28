@@ -14,10 +14,17 @@
         <option value="$PROJECT_DIR$/maven_study/maven_03_pojo/pom.xml" />
         <option value="$PROJECT_DIR$/maven_study/maven_02_ssm/pom.xml" />
         <option value="$PROJECT_DIR$/maven_study/maven_04_dao/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_study/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_study/boot_01_quickstart/pom.xml" />
       </list>
     </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/springboot_study/pom.xml" />
+      </set>
+    </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
