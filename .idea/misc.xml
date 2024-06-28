@@ -21,6 +21,7 @@
         <option value="$PROJECT_DIR$/springboot_study/boot_01_quickstart/pom.xml" />
         <option value="$PROJECT_DIR$/springboot_study/boot_02_base_config/pom.xml" />
         <option value="$PROJECT_DIR$/springboot_study/boot_03_read_data/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_study/boot_04_profile/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
