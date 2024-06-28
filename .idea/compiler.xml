@@ -10,6 +10,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring_22_aop_advice_data" />
         <module name="maven_04_dao" />
+        <module name="boot_02_base_config" />
         <module name="spring_13_annotation_di" />
         <module name="spring_16_spring_junit" />
         <module name="spring_24_case_transfer" />
@@ -59,6 +60,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="boot_01_quickstart" options="-parameters" />
+      <module name="boot_02_base_config" options="-parameters" />
     </option>
   </component>
 </project>
