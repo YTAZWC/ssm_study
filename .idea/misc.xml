@@ -4,6 +4,9 @@
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/springboot_study/boot_03_read_data" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
@@ -17,6 +20,7 @@
         <option value="$PROJECT_DIR$/springboot_study/pom.xml" />
         <option value="$PROJECT_DIR$/springboot_study/boot_01_quickstart/pom.xml" />
         <option value="$PROJECT_DIR$/springboot_study/boot_02_base_config/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_study/boot_03_read_data/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

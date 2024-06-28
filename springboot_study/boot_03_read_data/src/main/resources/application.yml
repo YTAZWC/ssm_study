@@ -1,0 +1,14 @@
+
+lesson: SpringBoot
+
+server:
+  port: 9003
+
+enterprise:
+  name: ytazwc
+  age: 22
+  tel: 18570354653
+  subject:
+    - Java
+    - 前端
+    - 大数据
