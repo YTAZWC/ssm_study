@@ -9,6 +9,8 @@ import top.ytazwc.boot.domain.Book;
  */
 @Mapper
 public interface BookMapper {
-//    @Insert("select * from tbl_book where id = #{id}")
+
+    // @Insert("select * from tbl_book where id = #{id}")
     Book getById(Integer id);
+
 }

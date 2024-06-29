@@ -1,17 +1,15 @@
 server:
-  port: 9008
-
+  port: 9009
+# TODO 配置数据源相关信息
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/ssm_db?serverTimezone=UTC
     username: root
     password: 123456
-
+    url: jdbc:mysql://localhost:3306/ssm_db?serverTimezone=UTC
 mybatis:
+  mapper-locations: classpath:mappers/*.xml
   type-aliases-package: top.ytazwc.boot.domain
-  mapper-locations: classpath:mapper/*.xml
   configuration:
     map-underscore-to-camel-case: true
-
