@@ -18,6 +18,7 @@
         <module name="spring_10_container" />
         <module name="spring_14_annotation_third_bean_manager" />
         <module name="springmvc_10_exception" />
+        <module name="boot_05_maven_and_boot_profile" />
         <module name="spring_07_di_autowire" />
         <module name="spring_15_spring_mybatis" />
         <module name="springmvc_01_quickstart" />
@@ -65,6 +66,7 @@
       <module name="boot_02_base_config" options="-parameters" />
       <module name="boot_03_read_data" options="-parameters" />
       <module name="boot_04_profile" options="-parameters" />
+      <module name="boot_05_maven_and_boot_profile" options="-parameters" />
     </option>
   </component>
 </project>
