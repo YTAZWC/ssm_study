@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/springboot_study/boot_08_mybatis/boot_08_mybatis.iml" filepath="$PROJECT_DIR$/springboot_study/boot_08_mybatis/boot_08_mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/maven_study/maven_02_ssm/maven_02_ssm.iml" filepath="$PROJECT_DIR$/maven_study/maven_02_ssm/maven_02_ssm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mp_study/mp_study.iml" filepath="$PROJECT_DIR$/mp_study/mp_study.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot_study/springboot_study.iml" filepath="$PROJECT_DIR$/springboot_study/springboot_study.iml" />
       <module fileurl="file://$PROJECT_DIR$/ssm_study.iml" filepath="$PROJECT_DIR$/ssm_study.iml" />
     </modules>
