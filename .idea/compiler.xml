@@ -27,6 +27,7 @@
         <module name="spring_17_aop_demo" />
         <module name="spring_05_di_setter" />
         <module name="maven_03_pojo" />
+        <module name="boot_06_config_file" />
         <module name="spring_09_datasource" />
         <module name="spring_20_app_advice_type" />
         <module name="spring_23_case_handle_password" />
@@ -67,6 +68,7 @@
       <module name="boot_03_read_data" options="-parameters" />
       <module name="boot_04_profile" options="-parameters" />
       <module name="boot_05_maven_and_boot_profile" options="-parameters" />
+      <module name="boot_06_config_file" options="-parameters" />
     </option>
   </component>
 </project>
