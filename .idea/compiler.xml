@@ -48,6 +48,7 @@
         <module name="spring_02_base_config" />
         <module name="springmvc_12_interceptor" />
         <module name="springmvc_08_ssm" />
+        <module name="boot_07_test" />
         <module name="spring_19_aop_pointcut" />
         <module name="spring_21_case_interface_run_speed" />
         <module name="boot_04_profile" />
@@ -69,6 +70,7 @@
       <module name="boot_04_profile" options="-parameters" />
       <module name="boot_05_maven_and_boot_profile" options="-parameters" />
       <module name="boot_06_config_file" options="-parameters" />
+      <module name="boot_07_test" options="-parameters" />
     </option>
   </component>
 </project>
