@@ -22,6 +22,7 @@
         <option value="$PROJECT_DIR$/springboot_study/boot_02_base_config/pom.xml" />
         <option value="$PROJECT_DIR$/springboot_study/boot_03_read_data/pom.xml" />
         <option value="$PROJECT_DIR$/springboot_study/boot_04_profile/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_study/boot_05_maven_and_boot_profile/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
@@ -29,7 +30,6 @@
         <option value="$PROJECT_DIR$/springboot_study/pom.xml" />
       </set>
     </option>
-    <option name="workspaceImportForciblyTurnedOn" value="true" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
