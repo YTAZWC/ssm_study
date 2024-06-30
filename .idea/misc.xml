@@ -29,6 +29,7 @@
         <option value="$PROJECT_DIR$/springboot_study/boot_09_ssm/pom.xml" />
         <option value="$PROJECT_DIR$/mp_study/mp_01_quickstart/pom.xml" />
         <option value="$PROJECT_DIR$/mp_study/mp_02_dql/pom.xml" />
+        <option value="$PROJECT_DIR$/mp_study/mp_03_dml/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

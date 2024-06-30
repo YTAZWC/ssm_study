@@ -1,0 +1,19 @@
+server:
+  port: 9093
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mp_db?serverTimezone=UTC
+    username: root
+    password: 123456
+  main:
+    banner-mode: off
+mybatis-plus:
+  global-config:
+    banner: false
+    db-config:
+      id-type: assign_id  # id生成策略: 使用雪花算法
+      table-prefix: tbl_  # 数据库表名前缀
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
