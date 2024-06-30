@@ -81,4 +81,32 @@ class DqlApplicationTests {
         System.out.println(users);
     }
 
+    @Test
+    void testConditionEq() {
+        LambdaQueryWrapper<User> queryWrapper = new LambdaQueryWrapper<>();
+        // 等值=
+        queryWrapper.eq(User::getName, "ytazwc").eq(User::getPassword, "ytazwc");
+        // selectOne 查询单个
+        User user = userDao.selectOne(queryWrapper);
+        System.out.println(user);
+    }
+
+    @Test
+    void testConditionScope() {
+        LambdaQueryWrapper<User> queryWrapper = new LambdaQueryWrapper<>();
+        // 范围查询 lt、le；gt、ge；eq；between
+        queryWrapper.between(User::getAge, 10, 30);
+        List<User> users = userDao.selectList(queryWrapper);
+        System.out.println(users);
+    }
+
+    @Test
+    void testConditionLike() {
+        LambdaQueryWrapper<User> queryWrapper = new LambdaQueryWrapper<>();
+        // 模糊查询 like
+        queryWrapper.likeLeft(User::getName, "yt");
+        List<User> users = userDao.selectList(queryWrapper);
+        System.out.println(users);
+    }
+
 }
