@@ -15,5 +15,8 @@ mybatis-plus:
     db-config:
       id-type: assign_id  # id生成策略: 使用雪花算法
       table-prefix: tbl_  # 数据库表名前缀
+      logic-delete-field: deleted
+      logic-delete-value: "1"
+      logic-not-delete-value: "0"
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

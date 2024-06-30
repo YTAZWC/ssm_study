@@ -3,6 +3,7 @@ package top.ytazwc.mp.domain;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.Version;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -26,4 +27,13 @@ public class User {
     private String password;
     private Integer age;
     private String tel;
+
+    // 逻辑删除字段
+//    @TableLogic(value = "0", delval = "1") // 标记为逻辑删除字段
+    @TableField(select = false)
+    private Integer deleted;
+
+    // 乐观锁
+    @Version
+    private Integer version;
 }
