@@ -10,6 +10,7 @@ import top.ytazwc.mp.domain.User;
 import top.ytazwc.mp.domain.query.UserQuery;
 
 import java.util.List;
+import java.util.Map;
 
 @SpringBootTest
 class DqlApplicationTests {
@@ -59,6 +60,24 @@ class DqlApplicationTests {
         queryWrapper.lt(null != query.getAgeUpper(), User::getAge, query.getAgeUpper())
                     .gt(null != query.getAge(), User::getAge, query.getAge());
         List<User> users = userDao.selectList(queryWrapper);
+        System.out.println(users);
+    }
+
+    // 查询投影：不查询所有字段，只查询出指定内容的数据
+    @Test
+    void testGet() {
+//        LambdaQueryWrapper<User> queryWrapper = new LambdaQueryWrapper<>();
+//        lambdaQueryWrapper.select(
+//                User::getId,
+//                User::getName,
+//                User::getAge);
+        QueryWrapper<User> queryWrapper = new QueryWrapper<>();
+//        queryWrapper.select("id", "name", "age", "tel");
+//        List<User> users = userDao.selectList(queryWrapper);
+        queryWrapper.select("count(*) as count, tel");
+        // 按电话分组
+        queryWrapper.groupBy("tel");
+        List<Map<String, Object>> users = userDao.selectMaps(queryWrapper);
         System.out.println(users);
     }
 
