@@ -23,6 +23,7 @@
         <module name="spring_01_quickstart" />
         <module name="springmvc_03_request_mapping" />
         <module name="spring_18_aop_quickstart" />
+        <module name="mp_02_dql" />
         <module name="springmvc_07_rest_case" />
         <module name="spring_02_base_config" />
         <module name="springmvc_12_interceptor" />
@@ -77,6 +78,7 @@
       <module name="boot_08_mybatis" options="-parameters" />
       <module name="boot_09_ssm" options="-parameters" />
       <module name="mp_01_quickstart" options="-parameters" />
+      <module name="mp_02_dql" options="-parameters" />
     </option>
   </component>
 </project>

@@ -28,6 +28,7 @@
         <option value="$PROJECT_DIR$/springboot_study/boot_08_mybatis/pom.xml" />
         <option value="$PROJECT_DIR$/springboot_study/boot_09_ssm/pom.xml" />
         <option value="$PROJECT_DIR$/mp_study/mp_01_quickstart/pom.xml" />
+        <option value="$PROJECT_DIR$/mp_study/mp_02_dql/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

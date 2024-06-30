@@ -18,10 +18,10 @@ class QuickstartApplicationTests {
     @Test
     void testSave() {
         User user = new User();
-        user.setName("name_bbf737a68ff5");
-        user.setPassword("password_51456f17ddd4");
+        user.setName("mgy");
+        user.setPassword("mgy");
         user.setAge(22);
-        user.setTel("tel_5a67b613bfa8");
+        user.setTel("13465658787");
         userDao.insert(user);
     }
 
