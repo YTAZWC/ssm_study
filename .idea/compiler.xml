@@ -33,6 +33,7 @@
         <module name="boot_08_mybatis" />
         <module name="maven_04_dao" />
         <module name="boot_02_base_config" />
+        <module name="mp_04_generator" />
         <module name="spring_13_annotation_di" />
         <module name="spring_16_spring_junit" />
         <module name="spring_24_case_transfer" />
@@ -81,6 +82,7 @@
       <module name="mp_01_quickstart" options="-parameters" />
       <module name="mp_02_dql" options="-parameters" />
       <module name="mp_03_dml" options="-parameters" />
+      <module name="mp_04_generator" options="-parameters" />
     </option>
   </component>
 </project>
