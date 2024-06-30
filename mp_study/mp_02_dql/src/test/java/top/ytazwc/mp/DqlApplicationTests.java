@@ -109,4 +109,10 @@ class DqlApplicationTests {
         System.out.println(users);
     }
 
+    @Test
+    void testTableName() {
+        List<User> users = userDao.selectList(null);
+        System.out.println(users);
+    }
+
 }
