@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import top.ytazwc.mp.dao.UserDao;
 import top.ytazwc.mp.domain.User;
+import top.ytazwc.mp.domain.query.UserQuery;
 
 import java.util.List;
 
@@ -43,6 +44,22 @@ class DqlApplicationTests {
                 .gt(User::getAge, 30);
         List<User> list = userDao.selectList(lambdaQueryWrapper);
         System.out.println(list);
+    }
+
+    @Test
+    void testGetAllAndNull() {
+        // 模拟页面查询条件
+        UserQuery query = new UserQuery();
+        // 下限
+//        query.setAge(10);
+        // 上限
+        query.setAgeUpper(30);
+        // null判断
+        LambdaQueryWrapper<User> queryWrapper = new LambdaQueryWrapper<>();
+        queryWrapper.lt(null != query.getAgeUpper(), User::getAge, query.getAgeUpper())
+                    .gt(null != query.getAge(), User::getAge, query.getAge());
+        List<User> users = userDao.selectList(queryWrapper);
+        System.out.println(users);
     }
 
 }
